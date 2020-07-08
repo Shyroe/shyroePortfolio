@@ -1,5 +1,6 @@
 import React from 'react';
-
+import 'regenerator-runtime/runtime';
+import Typical from 'react-typical';
 import Header from '../Header/index';
 import SocialMedia from '../SocialMedia/index';
 import * as S from './styled';
@@ -22,7 +23,23 @@ const index = () => (
           <img src={avatar} alt="avatar" />
         </figure>
         <div className="banner-intro">
-          <HeadingPrimaryWhite>web developer</HeadingPrimaryWhite>
+          <HeadingPrimaryWhite>
+            <span style={{ color: '#474be7' }}>
+              <Typical
+                loop={Infinity}
+                wrapper="b"
+                steps={[
+                  'Profissional',
+                  1000,
+                  'Apaixonado',
+                  1000,
+                  'Front-End',
+                  1000,
+                ]}
+              />
+            </span>{' '}
+            web developer
+          </HeadingPrimaryWhite>
           <DividerWhite />
           <div className="skills">
             {techData.map((item) => (

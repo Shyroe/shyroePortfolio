@@ -8,20 +8,17 @@ export const LocationSection = styled.section`
   justify-content: center;
   width: 100%;
   height: 100%;
-  /* border: 4px solid red; */
 `;
 export const Location = styled.div`
   display: flex;
   justify-content: flex-start;
-  /* justify-content: center; */
+
   color: ${V.colorWhite};
   width: 100%;
-  /* padding-left: 4rem; */
 
   @media only screen and (max-width: ${V.bpSmall}) {
     flex-flow: column nowrap;
   }
-  /* border: 4px solid green; */
 
   & > .map {
     display: flex;
@@ -39,7 +36,6 @@ export const Location = styled.div`
     }
     & > .city {
       font-size: 1.8rem;
-      /* margin-top: 1rem; */
     }
 
     & > .google-map {

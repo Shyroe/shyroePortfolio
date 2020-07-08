@@ -1,19 +1,7 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { Code } from '@styled-icons/entypo/';
 import { Bars } from '@styled-icons/fa-solid/';
 import V from '../../styles/variables';
-
-// function changeMenu() {
-//   return css`
-//     transform: ${({ openMenu }) =>
-//       openMenu === true ? 'scale(1,1)' : 'scale(1,0)'};
-//   `;
-// }
-
-// const changeMenu = css`
-//   transform: ${({ openMenu }) =>
-//     openMenu === true ? 'scale(1,1)' : 'scale(1,0)'}
-// `;
 
 export const IconCode = styled(Code)`
   width: 2rem;
@@ -98,8 +86,7 @@ export const Navigation = styled.nav`
     background-color: #000120;
     transition: all 0.3s;
     transform: ${(props) =>
-      props.openMenu === true ? 'scale(1,1)' : 'scale(1,0)'}
-     ;
+      props.openMenu === true ? 'scale(1,1)' : 'scale(1,0)'};
     transform-origin: top;
 
     /* & > .open {
@@ -119,54 +106,52 @@ export const Navigation = styled.nav`
       border: 2px solid green;
     }
     & > .item {
-    margin-right: 1rem;
+      margin-right: 1rem;
 
-  & > .link {
-    text-decoration: none;
-    /* color: ${V.colorWhite}; */
-    color: #fff;
-    font-size: 1.7rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 1rem;
-    position: relative;
+      & > .link {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 1rem;
+        position: relative;
 
-    @media only screen and (max-width: ${V.bpSmall}) {
-      font-size: 2rem;
+        @media only screen and (max-width: ${V.bpSmall}) {
+          font-size: 2rem;
+        }
+      }
+
+      & > .link:hover {
+        color: ${V.colorIcon};
+      }
+
+      & > .link::before,
+      & > .link::after {
+        content: '';
+        width: 100%;
+        height: 0.2rem;
+        position: absolute;
+        left: 0;
+        transform: scaleX(0);
+        transition: all 1s;
+        background-color: ${V.colorWhite};
+      }
+
+      & > .link::before {
+        top: 0;
+        transform-origin: left;
+      }
+
+      & > .link::after {
+        bottom: 0;
+        transform-origin: right;
+      }
+
+      & > .link:hover::before,
+      & > .link:hover::after {
+        transform: scaleX(1);
+      }
     }
   }
-
-  & > .link:hover {
-    color: ${V.colorIcon};
-  }
-
-  & > .link::before,
-  & > .link::after {
-    content: '';
-    width: 100%;
-    height: 0.2rem;
-    position: absolute;
-    left: 0;
-    transform: scaleX(0);
-    transition: all 1s;
-    /* background-color:  ${V.colorWhite}; */
-    background-color: ${V.colorWhite};
-  }
-
-  & > .link::before {
-    top: 0;
-    transform-origin: left;
-  }
-
-  & > .link::after {
-    bottom: 0;
-    transform-origin: right;
-  }
-
-  & > .link:hover::before,
-  & > .link:hover::after {
-    transform: scaleX(1);
-  }
-    }
-}
 `;

@@ -8,27 +8,15 @@ export const WrapperModal = styled.div`
   width: 100%;
   height: 100vh;
   z-index: 500;
-  /* overflow-y: none; */
-  /* overflow: auto; */
-  /* overflow: hidden; */
-  /* background-color: rgba(0, 0, 0, 0.5); */
   background-color: ${V.colorWhite};
   padding-bottom: 4rem;
   border: 2px solid green;
 `;
 
 export const ModalContent = styled.div`
-  /* position: absolute;
-  top: 0%;
-  left: 50%; */
-  /* transform: translate(-50%, -50%); */
   width: 50%;
   height: 100%;
   margin: 3rem auto;
-  /* padding-top: 3rem; */
-  /* width: 50%; */
-  /* width: auto;
-  height: 100%; */
   display: flex;
   flex-direction: column;
   color: ${V.colorDark};
@@ -62,14 +50,12 @@ export const ModalContent = styled.div`
     & > .description {
       font-size: 2rem;
       font-weight: 400;
-      /* line-height: 2.6rem; */
       margin-top: 1.5rem;
     }
   }
 
   & > .modal-footer {
     width: 100%;
-    /* margin: 0 auto; */
     color: ${V.colorDark};
     margin-top: 1.5rem;
     text-transform: capitalize;
