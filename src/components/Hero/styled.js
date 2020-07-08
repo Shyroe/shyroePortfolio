@@ -65,14 +65,17 @@ export const Banner = styled.div`
     }
 
     & > .skills {
+      width: 80%;
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       /* border: 2px solid orange; */
 
       & > span {
         font-size: 2rem;
         line-height: 3rem;
         font-family: 'Lato', 'sans-serif';
+        line-height: 2.8rem;
         text-align: center;
         margin-right: 0.5rem;
         margin-left: 0.5rem;
