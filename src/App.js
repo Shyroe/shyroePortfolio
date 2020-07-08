@@ -9,6 +9,7 @@ import Portfolio from './components/Portfolio/index';
 import About from './components/About';
 import Contact from './components/Contact';
 import Location from './components/Location';
+import Footer from './components/Footer';
 
 const App = () => (
   <>
@@ -18,6 +19,7 @@ const App = () => (
     <About />
     <Contact />
     <Location />
+    <Footer />
   </>
 );
 
