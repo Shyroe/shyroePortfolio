@@ -30,31 +30,31 @@ export const Location = styled.div`
     justify-content: space-around;
     height: 35rem;
     margin-right: 5rem;
-  }
 
-  & > .title {
-    margin: 0;
-    padding: 0;
-    font-size: 2.7rem;
-    text-transform: uppercase;
-  }
-  & > .city {
-    font-size: 1.8rem;
-    /* margin-top: 1rem; */
-  }
+    & > .title {
+      margin: 0;
+      padding: 0;
+      font-size: 2.7rem;
+      text-transform: uppercase;
+    }
+    & > .city {
+      font-size: 1.8rem;
+      /* margin-top: 1rem; */
+    }
 
-  & > .google-map {
-    width: 32.4rem;
-    height: 20rem;
-
-    & > iframe {
+    & > .google-map {
       width: 32.4rem;
       height: 20rem;
-      border-radius: 1.5rem;
+
+      & > iframe {
+        width: 32.4rem;
+        height: 20rem;
+        border-radius: 1.5rem;
+      }
     }
   }
   & > .social {
-    & .title {
+    & .social-title {
       font-size: 2.7rem;
       text-transform: uppercase;
       font-weight: 600;
