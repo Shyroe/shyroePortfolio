@@ -1,7 +1,19 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Code } from '@styled-icons/entypo/';
 import { Bars } from '@styled-icons/fa-solid/';
 import V from '../../styles/variables';
+
+// function changeMenu() {
+//   return css`
+//     transform: ${({ openMenu }) =>
+//       openMenu === true ? 'scale(1,1)' : 'scale(1,0)'};
+//   `;
+// }
+
+// const changeMenu = css`
+//   transform: ${({ openMenu }) =>
+//     openMenu === true ? 'scale(1,1)' : 'scale(1,0)'}
+// `;
 
 export const IconCode = styled(Code)`
   width: 2rem;
@@ -24,13 +36,19 @@ export const Header = styled.div`
   width: 100%;
 
   & > .head-nav {
+    width: 97rem;
     height: 10rem;
-    /* height: 8rem; */
+    margin: 0 auto;
+    padding: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: all 0.6s;
-    padding: 0 2rem;
+    border: 2px solid orangered;
+
+    @media only screen and (max-width: ${V.bpLarge}) {
+      width: 100%;
+    }
 
     & > .shrink {
       height: 7.5rem;
@@ -79,12 +97,14 @@ export const Navigation = styled.nav`
     border-top: 1px solid white;
     background-color: #000120;
     transition: all 0.3s;
-    transform: scaleY(0);
+    transform: ${(props) =>
+      props.openMenu === true ? 'scale(1,1)' : 'scale(1,0)'}
+     ;
     transform-origin: top;
 
-    & > .open {
+    /* & > .open {
       transform: scaleY(1);
-    }
+    } */
   }
 
   & > .list {

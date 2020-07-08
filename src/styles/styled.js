@@ -81,6 +81,7 @@ export const HeadingPrimarySkeleton = styled.h2`
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+  line-height: 5rem;
 `;
 
 export const HeadingPrimaryWhite = styled(HeadingPrimarySkeleton)`

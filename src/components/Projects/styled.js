@@ -16,6 +16,14 @@ export const ProjectsWrapper = styled.div`
   grid-auto-rows: 21rem;
   grid-gap: 30px;
   margin-top: 4rem;
+
+  @media only screen and (max-width: ${V.bpMedium}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (max-width: ${V.bpSmallest}) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const Project = styled.figure`

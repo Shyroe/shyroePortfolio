@@ -28,9 +28,14 @@ export const Banner = styled.div`
       height: 25rem;
       border-radius: 50%;
 
+      @media only screen and (max-width: ${V.bpMedium}) {
+        width: 20rem;
+        height: 20rem;
+      }
+
       @media only screen and (max-width: ${V.bpSmall}) {
-        width: 25rem;
-        height: 25rem;
+        width: 15rem;
+        height: 15rem;
       }
 
       /* border: 3px solid purple; */
@@ -50,7 +55,8 @@ export const Banner = styled.div`
     color: ${V.colorWhite};
     /* height: 60rem; */
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    height: auto;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
