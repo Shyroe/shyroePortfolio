@@ -35,7 +35,6 @@ export const Banner = styled.div`
         width: 15rem;
         height: 15rem;
       }
-
       background-position: center left;
       background-size: cover;
     }
@@ -57,7 +56,6 @@ export const Banner = styled.div`
     justify-content: space-evenly;
     align-items: center;
     padding: 1.5rem 0;
-    border: 2px solid blue;
 
     @media only screen and (max-width: ${V.bpSmall}) {
     }

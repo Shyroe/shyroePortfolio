@@ -32,7 +32,6 @@ export const Header = styled.div`
     justify-content: space-between;
     align-items: center;
     transition: all 0.6s;
-    border: 2px solid orangered;
 
     @media only screen and (max-width: ${V.bpLarge}) {
       width: 100%;

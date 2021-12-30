@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import V from '../../styles/variables';
 
 export const LocationSection = styled.section`
-  padding: 10% 0% 10% 10%;
+  padding: 10% 0;
   background-color: #000120;
   display: flex;
   justify-content: center;

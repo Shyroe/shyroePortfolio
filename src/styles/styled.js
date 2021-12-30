@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   max-width: 97rem;
   width: 100%;
   margin: 0 auto;
-  border: 5px solid purple;
+  /* border: 5px solid purple; */
 `;
 
 // Social media
