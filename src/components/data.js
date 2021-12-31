@@ -23,8 +23,8 @@ export const projectsData = [
 
       A ideia do projeto é criar uma interface complexa e aplicar conceitos de código CSS para tornar o projeto escalável e também criar fantásticas animações e efeitos apenas utilizando a linguagem de estilos CSS.`,
     },
-    github: '',
-    visit: '',
+    github: 'https://github.com/Shyroe/Natours',
+    visit: 'https://natours-interface.netlify.app/',
   },
   {
     id: 2,
@@ -36,6 +36,8 @@ export const projectsData = [
 
       A ideia do projeto é criar uma interface complexa e responsiva, aplicando os conceitos do módulo flexbox.`,
     },
+    github: 'https://github.com/Shyroe/Trillo',
+    visit: 'https://trilloteste.netlify.app/',
   },
   {
     id: 3,
@@ -47,6 +49,8 @@ export const projectsData = [
 
       Projeto Front-End, construído com o framework React e Api do Github. Ao desenvolver esse projeto compreendi importantes conceitos e tecnologias do React. E, também, trabalhei com rotas e requisições assíncronas à API.`,
     },
+    github: 'https://github.com/Shyroe/GithubFinderApp',
+    visit: 'https://githubfinder-reactapp.netlify.app/',
 
   },
   {
@@ -59,6 +63,7 @@ export const projectsData = [
 
       A ideia por trás desse projeto é a criação de uma aplicação para armazenar diversas Urls, de diferentes pessoas que acessarem a plataforma, e disponibilizá-las facilmente ao usuário. A plataforma conecta individualmente cada usuário à sua lista de Urls salvas.`,
     },
+    github: 'https://github.com/Shyroe/FavoriteLinks',
   },
   {
     id: 5,
@@ -68,6 +73,8 @@ export const projectsData = [
     content: {
       description: 'Aplicação que simula a parte de um ecommerce em que adicionamos produtos ao carrinho de compras. Trata-se de um CRUD Front-End feito em React, utilizando as tecnologias: Reack hooks, contextApi e SASS para estilização.',
     },
+    visit: 'https://shopping-cart-v1.netlify.app/',
+    github: 'https://github.com/Shyroe/ShoppingCart',
   },
   {
     id: 6,
@@ -77,6 +84,8 @@ export const projectsData = [
     content: {
       description: 'Aplicação de finanças que disponibiliza uma interface para o usuário registrar seus gastos e ganhos diários, com o intuito de aumentar o controle a respeito da sua vida financeira. Trata-se de um projeto Front-End feito em React, que utiliza as tecnologias: React Hooks; useReducer() e SASS.',
     },
+    visit: 'https://expense-tck.netlify.app/',
+    github: 'https://github.com/Shyroe/TrackerExpense',
   },
   {
     id: 7,
