@@ -16,7 +16,7 @@ export default () => {
         return <S.EnvelopeIcon />;
         break;
       default:
-        return <S.Skype />;
+        return <S.SkypeIcon />;
     }
   };
   return (

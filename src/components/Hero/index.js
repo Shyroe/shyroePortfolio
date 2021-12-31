@@ -1,5 +1,4 @@
 import React from 'react';
-import 'regenerator-runtime/runtime';
 import Typical from 'react-typical';
 import Header from '../Header/index';
 import SocialMedia from '../SocialMedia/index';
