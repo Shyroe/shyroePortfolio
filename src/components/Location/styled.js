@@ -8,6 +8,11 @@ export const LocationSection = styled.section`
   justify-content: center;
   width: 100%;
   height: 100%;
+
+  @media only screen and (max-width: ${V.bpMedium}) {
+    padding: 10% 5%;
+  }
+
 `;
 export const Location = styled.div`
   display: flex;
@@ -33,6 +38,11 @@ export const Location = styled.div`
       padding: 0;
       font-size: 2.7rem;
       text-transform: uppercase;
+
+      @media only screen and (max-width: ${V.bpSmall}) {
+      font-size: 2.2rem;
+    }
+
     }
     & > .city {
       font-size: 1.8rem;
@@ -57,9 +67,10 @@ export const Location = styled.div`
       margin-bottom: 5rem;
       margin-top: 1.7rem;
 
-      @media only screen and (max-width: $bp-small) {
+      @media only screen and (max-width: ${V.bpSmall}) {
         text-align: center;
         padding-top: 4rem;
+        font-size: 2.2rem;
       }
     }
   }

@@ -7,6 +7,11 @@ export const Hero = styled.div`
   background: url(${(props) => props.heroBg});
   background-size: cover;
   position: relative;
+
+  @media only screen and (max-width: ${V.bpLarge}) {
+    height: 100%;
+  }
+
 `;
 
 export const Banner = styled.div`

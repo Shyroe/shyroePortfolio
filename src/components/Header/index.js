@@ -11,15 +11,15 @@ const index = () => {
   return (
     <S.Header>
       <div className="head-nav">
-        <div className="brand">
+        <a href="/" className="brand">
           <S.IconCode />
           Shyroe
-        </div>
+        </a>
         <S.Navigation openMenu={openMenu}>
           <ul className="list">
             {headerData.map((item) => (
               <li className="item">
-                <a href="/" className="link">
+                <a href={item.link} className="link">
                   {item.name}
                 </a>
               </li>

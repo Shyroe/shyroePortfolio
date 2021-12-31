@@ -4,8 +4,8 @@ import { Bars } from '@styled-icons/fa-solid/';
 import V from '../../styles/variables';
 
 export const IconCode = styled(Code)`
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   fill: ${V.colorIcon};
   margin-right: 1rem;
 `;
@@ -22,6 +22,10 @@ export const Header = styled.div`
   top: 0;
   z-index: 100;
   width: 100%;
+
+  @media only screen and (max-width: ${V.bpLarge}) {
+    padding: 0 5%;
+  }
 
   & > .head-nav {
     width: 97rem;
@@ -45,7 +49,9 @@ export const Header = styled.div`
     & > .brand {
       display: flex;
       align-items: center;
-      font-size: 2rem;
+      font-size: 3rem;
+      text-decoration: none;
+      color: white;
     }
   }
 `;
@@ -84,8 +90,7 @@ export const Navigation = styled.nav`
     border-top: 1px solid white;
     background-color: #000120;
     transition: all 0.3s;
-    transform: ${(props) =>
-      props.openMenu === true ? 'scale(1,1)' : 'scale(1,0)'};
+    transform: ${(props) => (props.openMenu === true ? 'scale(1,1)' : 'scale(1,0)')};
     transform-origin: top;
 
     /* & > .open {

@@ -27,6 +27,11 @@ export const ContactSection = styled.section`
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+
+  @media only screen and (max-width: ${V.bpSmall}) {
+    padding: 12% 0;
+  }
+
 `;
 
 export const Contacts = styled.div`
@@ -53,8 +58,11 @@ export const ContactItem = styled.div`
   justify-content: space-evenly;
   align-items: center;
 
-  height: 13.6rem;
+  /* height: 13.6rem; */
+  height: auto;
   width: 24.2rem;
+  row-gap: 1.2rem;
+
 
   @media only screen and (max-width: ${V.bpSmallest}) {
     padding: 2.5rem 0;
@@ -66,6 +74,7 @@ export const ContactItem = styled.div`
   & > .name {
     color: ${V.colorDark};
     font-size: 1.9rem;
+    text-transform: capitalize;
   }
 
   & > .info {

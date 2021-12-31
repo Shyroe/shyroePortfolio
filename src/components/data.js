@@ -19,6 +19,8 @@ export const projectsData = [
     content: `Projeto Front-End (CSS apenas) mobile responsive e desktop responsive, feito com pré-processador Css (SASS) e arquitetura Css (BEM).
 
     A ideia do projeto é criar uma interface complexa e aplicar conceitos de código CSS para tornar o projeto escalável e também criar fantásticas animações e efeitos apenas utilizando a linguagem de estilos CSS.`,
+    github: '',
+    visit: '',
   },
   {
     id: 2,
@@ -69,18 +71,22 @@ export const headerData = [
   {
     name: 'currículo',
     isActive: false,
+    link: 'https://drive.google.com/file/d/1nlY4_J4o2vuXIuy_TOarcmlnhbLm9V3x/view?usp=sharing',
   },
   {
     name: 'projetos',
     isActive: false,
+    link: '/#projetos',
   },
   {
     name: 'sobre',
     isActive: false,
+    link: '/#sobre',
   },
   {
     name: 'contato',
     isActive: false,
+    link: '/#contato',
   },
 ];
 
@@ -100,11 +106,10 @@ export const socialIcons = [
 export const techData = [
   'html / css',
   'javascript',
-  'reactJs / reactnative',
-  'nodejs',
-  'sass',
-  'mongodb',
-  'express',
+  'reactJs / typescript',
+  'nodejs / express',
+  'sass / mui',
+  'typescript',
 ];
 
 export const aboutData = {
@@ -123,7 +128,7 @@ export const contactData = [
   {
     id: 2,
     name: 'telefone',
-    info: '988238706',
+    info: '(17) 988238706',
     icon: 'phone',
   },
   {

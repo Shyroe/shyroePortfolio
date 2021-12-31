@@ -31,18 +31,27 @@ const index = ({ modalsClone, closeModal }) => (
                   <p className="description">{item.content}</p>
                 </div>
                 <div className="modal-footer">
-                  <h3 className="repo">
+                  {/* <h3 className="repo">
                     Github:
                     <a className="link" href="/">
                       link
                     </a>
-                  </h3>
-                  <h3 className="repo">
+                  </h3> */}
+
+                  <a href="/" className="action github">
+                    Github
+                  </a>
+                  <a href="/" className="action deploy">
+                    Visitar
+                  </a>
+
+
+                  {/* <h3 className="repo">
                     Netlify:
                     <a className="link" href="/">
                       link
                     </a>
-                  </h3>
+                  </h3> */}
                 </div>
               </S.ModalContent>
             </>
