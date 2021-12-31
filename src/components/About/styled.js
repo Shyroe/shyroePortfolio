@@ -5,11 +5,13 @@ export const AboutSection = styled.section`
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
 `;
 export const AboutDescription = styled.p`
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'Lato', 'sans-serif';
-  line-height: 140%;
+  line-height: 160%;
+  font-weight: 300;
+  color: #f4f4f4;
 
   @media only screen and (max-width: $bp-small) {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
 `;

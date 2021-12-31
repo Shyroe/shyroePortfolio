@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   max-width: 97rem;
   width: 100%;
   margin: 0 auto;
-  border: 5px solid purple;
+  /* border: 5px solid purple; */
 `;
 
 // Social media
@@ -77,10 +77,16 @@ export const DividerDark = styled(DividerSkeleton)`
 // Heading Typography
 
 export const HeadingPrimarySkeleton = styled.h2`
-  font-size: 4.4rem;
+  font-size: 3.4rem;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+  line-height: 5rem;
+
+  @media only screen and (max-width: ${V.bpSmall}) {
+    font-size: 2.6rem;
+  }
+
 `;
 
 export const HeadingPrimaryWhite = styled(HeadingPrimarySkeleton)`

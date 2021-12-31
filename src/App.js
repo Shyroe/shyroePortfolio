@@ -8,6 +8,8 @@ import Hero from './components/Hero/index';
 import Portfolio from './components/Portfolio/index';
 import About from './components/About';
 import Contact from './components/Contact';
+import Location from './components/Location';
+import Footer from './components/Footer';
 
 const App = () => (
   <>
@@ -16,6 +18,8 @@ const App = () => (
     <Portfolio />
     <About />
     <Contact />
+    <Location />
+    <Footer />
   </>
 );
 

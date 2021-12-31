@@ -6,13 +6,15 @@ import {
   Wrapper,
 } from '../../styles/styled';
 
+import { aboutData } from '../data';
+
 export default () => (
-  <S.AboutSection>
+  <S.AboutSection id="sobre">
     <Wrapper>
-      <HeadingPrimaryWhite>Sobre</HeadingPrimaryWhite>
+      <HeadingPrimaryWhite>{aboutData.title}</HeadingPrimaryWhite>
       <DividerWhite />
       <S.AboutDescription>
-        Olá, meu nome é: Leonardo Camargo. Minha entrada no universo do
+        {/* Olá, meu nome é: Leonardo Camargo. Minha entrada no universo do
         desenvolvimento WEB, se deu em razão da necessidade de criar um blog e
         compartilhar conhecimento com as pessoas. Eu iniciei com o Gerenciador
         de Conteúdo Wordpress, na época não entendia as tecnologias de
@@ -24,7 +26,9 @@ export default () => (
         com meus projetos”. A partir de então, tenho buscado conhecimento de
         todas as formas, por meio de: livros, vídeos, áudios, artigos na
         internet, cursos, etc. A meta é tornar-me o melhor desenvolvedor, isso
-        mesmo, a melhor versão de mim mesmo a cada dia.
+        mesmo, a melhor versão de mim mesmo a cada dia. */}
+
+        {aboutData.content}
       </S.AboutDescription>
     </Wrapper>
   </S.AboutSection>

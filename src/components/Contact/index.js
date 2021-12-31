@@ -20,7 +20,7 @@ export default () => {
     }
   };
   return (
-    <S.ContactSection>
+    <S.ContactSection id="contato">
       <Wrapper>
         <HeadingPrimaryDark>Entre em contato</HeadingPrimaryDark>
         <S.Contacts>

@@ -53,6 +53,20 @@ export default () => {
 
     // setProjectsClone([...filteredModals, selectedModal]);
     setModalsClone([...filteredModals, selectedModal]);
+
+    // scroll to top
+    // window.scrollTo(0, 0);
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+
+
+    // change height
+    // console.log('window height init: ', window.innerHeight);
+    // window.innerHeight = 250;
+    // console.log('window height fim: ', window.innerHeight);
   };
 
   const closeModal = (id) => {

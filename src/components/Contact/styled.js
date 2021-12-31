@@ -26,23 +26,20 @@ export const ContactSection = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* background-color: lightpink;
-  height: 44rem;
-  border: 3px solid red; */
   height: 100%;
+
+  @media only screen and (max-width: ${V.bpSmall}) {
+    padding: 12% 0;
+  }
+
 `;
 
 export const Contacts = styled.div`
   height: 100%;
   padding-top: 4rem;
-  /* padding: 0 2rem ;
-   display: flex;   */
   display: grid;
   justify-items: center;
-  /* justify-content: center;
-  align-items: center; */
   grid-template-columns: repeat(3, 1fr);
-  /* border: 5px solid brown; */
 
   @media only screen and (max-width: ${V.bpSmall}) {
     grid-template-columns: repeat(2, 1fr);
@@ -55,14 +52,17 @@ export const Contacts = styled.div`
 
 export const ContactItem = styled.div`
   display: flex;
-  /* flex-direction: column; */
+
   flex-flow: column nowrap;
-  /* justify-content: space-evenly; */
+
   justify-content: space-evenly;
   align-items: center;
-  /* background-color: lightsalmon; */
-  height: 13.6rem;
+
+  /* height: 13.6rem; */
+  height: auto;
   width: 24.2rem;
+  row-gap: 1.2rem;
+
 
   @media only screen and (max-width: ${V.bpSmallest}) {
     padding: 2.5rem 0;
@@ -74,6 +74,7 @@ export const ContactItem = styled.div`
   & > .name {
     color: ${V.colorDark};
     font-size: 1.9rem;
+    text-transform: capitalize;
   }
 
   & > .info {

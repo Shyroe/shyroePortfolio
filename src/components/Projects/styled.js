@@ -16,13 +16,21 @@ export const ProjectsWrapper = styled.div`
   grid-auto-rows: 21rem;
   grid-gap: 30px;
   margin-top: 4rem;
+
+  @media only screen and (max-width: ${V.bpMedium}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (max-width: ${V.bpSmallest}) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const Project = styled.figure`
   width: 100%;
   height: 100%;
   position: relative;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   background: url(${(props) => props.image});
   background-size: cover;
   background-position: center center;
@@ -35,7 +43,7 @@ export const Project = styled.figure`
   &:hover::before {
     /* background-color: ${V.colorIcon}; */
     height: 100%;
-    opacity: .7;
+    opacity: .85;
   }
 
   &:hover ${SearchIcon} {
