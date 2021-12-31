@@ -62,7 +62,6 @@ export const respIcons = styled.div`
   right: 10%;
   width: 5rem;
   height: 5rem;
-  border: 3px solid green;
   display: none;
   cursor: pointer;
 
@@ -107,7 +106,6 @@ export const Navigation = styled.nav`
       flex-flow: column nowrap;
       justify-content: space-evenly;
       height: 100%;
-      border: 2px solid green;
     }
     & > .item {
       margin-right: 1rem;

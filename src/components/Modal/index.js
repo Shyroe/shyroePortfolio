@@ -28,30 +28,68 @@ const index = ({ modalsClone, closeModal }) => (
                   <figure>
                     <img src={item.image} alt="this is the modal img" />
                   </figure>
-                  <p className="description">{item.content}</p>
+                  <div className="description">
+                    {
+                      item.content.description && (
+                        <p className="paragraph">
+                          {item.content.description}
+                        </p>
+                      )
+                    }
+
+                    {
+                      item.content.technologies && (
+                        <>
+                          <h3 className="destaque">Tecnologias utilizadas no projeto:</h3>
+                          <p className="paragraph">
+                            {item.content.technologies}
+                          </p>
+                        </>
+                      )
+                    }
+
+                    {
+                      item.content.features && (
+                        <>
+                          <h3 className="destaque">Funcionalidades e integrações:</h3>
+                          <p className="paragraph">
+                            {item.content.features}
+                          </p>
+                        </>
+                      )
+                    }
+
+                    {
+                      item.content.learn && (
+                        <>
+                          <h3 className="destaque">O que aprendi com este projeto:</h3>
+                          <p className="paragraph">
+                            {item.content.learn}
+                          </p>
+                        </>
+                      )
+                    }
+
+                  </div>
                 </div>
                 <div className="modal-footer">
-                  {/* <h3 className="repo">
-                    Github:
-                    <a className="link" href="/">
-                      link
-                    </a>
-                  </h3> */}
 
-                  <a href="/" className="action github">
-                    Github
-                  </a>
-                  <a href="/" className="action deploy">
-                    Visitar
-                  </a>
+                  {
+                    item.github && (
+                      <a href={item.github} target="_blank" className="action github" rel="noreferrer">
+                        Github
+                      </a>
+                    )
+                  }
 
+                  {
+                    item.visit && (
+                      <a href={item.visit} target="_blank" className="action deploy" rel="noreferrer">
+                        Visitar
+                      </a>
+                    )
+                  }
 
-                  {/* <h3 className="repo">
-                    Netlify:
-                    <a className="link" href="/">
-                      link
-                    </a>
-                  </h3> */}
                 </div>
               </S.ModalContent>
             </>

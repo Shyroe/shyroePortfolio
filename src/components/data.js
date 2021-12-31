@@ -7,6 +7,8 @@ import gitFinderImg from '../assets/img/github-finder.jpg';
 import favLinksImg from '../assets/img/favoritelinks-home.jpg';
 import shopCartImg from '../assets/img/shopping-cart.jpg';
 import expenseTrackerImg from '../assets/img/expense-tck.jpg';
+import wongamesImg from '../assets/img/wongames.png';
+import moviesFinderImg from '../assets/img/movies-finder.png';
 
 // Projects Data
 
@@ -16,54 +18,109 @@ export const projectsData = [
     show: false,
     title: 'natours',
     image: natoursImg,
-    content: `Projeto Front-End (CSS apenas) mobile responsive e desktop responsive, feito com pré-processador Css (SASS) e arquitetura Css (BEM).
+    content: {
+      description: `Projeto Front-End (CSS apenas) mobile responsive e desktop responsive, feito com pré-processador Css (SASS) e arquitetura Css (BEM).
 
-    A ideia do projeto é criar uma interface complexa e aplicar conceitos de código CSS para tornar o projeto escalável e também criar fantásticas animações e efeitos apenas utilizando a linguagem de estilos CSS.`,
-    github: '',
-    visit: '',
+      A ideia do projeto é criar uma interface complexa e aplicar conceitos de código CSS para tornar o projeto escalável e também criar fantásticas animações e efeitos apenas utilizando a linguagem de estilos CSS.`,
+    },
+    github: 'https://github.com/Shyroe/Natours',
+    visit: 'https://natours-interface.netlify.app/',
   },
   {
     id: 2,
     show: false,
     title: 'trillo',
     image: trilloImg,
-    content: `Projeto Front-End (CSS apenas) mobile responsive e desktop responsive, feito com pré-processador Css (SASS) e arquitetura Css (BEM).
+    content: {
+      description: `Projeto Front-End (CSS apenas) mobile responsive e desktop responsive, feito com pré-processador Css (SASS) e arquitetura Css (BEM).
 
-    A ideia do projeto é criar uma interface complexa e responsiva, aplicando os conceitos do módulo flexbox.`,
+      A ideia do projeto é criar uma interface complexa e responsiva, aplicando os conceitos do módulo flexbox.`,
+    },
+    github: 'https://github.com/Shyroe/Trillo',
+    visit: 'https://trilloteste.netlify.app/',
   },
   {
     id: 3,
     show: false,
     title: 'github finder',
     image: gitFinderImg,
-    content: `Este projeto é uma aplicação, que utiliza a Api do Github. Consiste em pesquisar por um usuário do Github e a aplicação retorna 30 usuários que estão relacionados com o nome inserido no campo de busca. Ao clicar em um usuário você poderá ver suas informações e acessar links que levam ao perfil do mesmo no Github ou à projetos realizados.
+    content: {
+      description: `Este projeto é uma aplicação, que utiliza a Api do Github. Consiste em pesquisar por um usuário do Github e a aplicação retorna 30 usuários que estão relacionados com o nome inserido no campo de busca. Ao clicar em um usuário você poderá ver suas informações e acessar links que levam ao perfil do mesmo no Github ou à projetos realizados.
 
-    Projeto Front-End, construído com o framework React e Api do Github. Ao desenvolver esse projeto compreendi importantes conceitos e tecnologias do React. E, também, trabalhei com rotas e requisições assíncronas à API.`,
+      Projeto Front-End, construído com o framework React e Api do Github. Ao desenvolver esse projeto compreendi importantes conceitos e tecnologias do React. E, também, trabalhei com rotas e requisições assíncronas à API.`,
+    },
+    github: 'https://github.com/Shyroe/GithubFinderApp',
+    visit: 'https://githubfinder-reactapp.netlify.app/',
+
   },
   {
     id: 4,
     show: false,
     title: 'favorite links',
     image: favLinksImg,
-    content: `Este é um projeto BackEnd. Foi construído em NodeJS com o framework ExpressJS; PostgreSQL para banco de dados; PassportJS para a criação da Autentição no backend. A parte visual foi feita com Handlebars(template engine) e Bootstrap4.
+    content: {
+      description: `Este é um projeto BackEnd. Foi construído em NodeJS com o framework ExpressJS; PostgreSQL para banco de dados; PassportJS para a criação da Autentição no backend. A parte visual foi feita com Handlebars(template engine) e Bootstrap4.
 
-    A ideia por trás desse projeto é a criação de uma aplicação para armazenar diversas Urls, de diferentes pessoas que acessarem a plataforma, e disponibilizá-las facilmente ao usuário. A plataforma conecta individualmente cada usuário à sua lista de Urls salvas.`,
+      A ideia por trás desse projeto é a criação de uma aplicação para armazenar diversas Urls, de diferentes pessoas que acessarem a plataforma, e disponibilizá-las facilmente ao usuário. A plataforma conecta individualmente cada usuário à sua lista de Urls salvas.`,
+    },
+    github: 'https://github.com/Shyroe/FavoriteLinks',
   },
   {
     id: 5,
     show: false,
     title: 'shoppping cart',
     image: shopCartImg,
-    content:
-      'Aplicação que simula a parte de um ecommerce em que adicionamos produtos ao carrinho de compras. Trata-se de um CRUD Front-End feito em React, utilizando as tecnologias: Reack hooks, contextApi e SASS para estilização.',
+    content: {
+      description: 'Aplicação que simula a parte de um ecommerce em que adicionamos produtos ao carrinho de compras. Trata-se de um CRUD Front-End feito em React, utilizando as tecnologias: Reack hooks, contextApi e SASS para estilização.',
+    },
+    visit: 'https://shopping-cart-v1.netlify.app/',
+    github: 'https://github.com/Shyroe/ShoppingCart',
   },
   {
     id: 6,
     show: false,
     title: 'expense tracker',
     image: expenseTrackerImg,
-    content:
-      'Aplicação de finanças que disponibiliza uma interface para o usuário registrar seus gastos e ganhos diários, com o intuito de aumentar o controle a respeito da sua vida financeira. Trata-se de um projeto Front-End feito em React, que utiliza as tecnologias: React Hooks; useReducer() e SASS.',
+    content: {
+      description: 'Aplicação de finanças que disponibiliza uma interface para o usuário registrar seus gastos e ganhos diários, com o intuito de aumentar o controle a respeito da sua vida financeira. Trata-se de um projeto Front-End feito em React, que utiliza as tecnologias: React Hooks; useReducer() e SASS.',
+    },
+    visit: 'https://expense-tck.netlify.app/',
+    github: 'https://github.com/Shyroe/TrackerExpense',
+  },
+  {
+    id: 7,
+    show: false,
+    title: 'wongames',
+    image: wongamesImg,
+    content: {
+      description: `Este projeto é um ecommerce de jogos, semelhante ao Steam. Foi feito utilizando, React de modo avançado, TDD (Test Driven Design).
+      Ou seja, foi realizado um teste antes de criar uma nova funcionalidade ou componente.
+      Cada componente foi criado também utilizando Storybook.`,
+      technologies: 'NextJS; Styled Components; Eslint; Typescript; Jest; React Testing Library; Cypress; Storybook; Prettier; Husky; GraphQL; Stripe',
+      features: 'Implementação de funcionalidades de um ecommerce, tais como: meio de pagamento, carrinho de compras,lista de desejos, autenticação, cadastro e login de usuários; dashboard. Consultas a API utilizando GraphQL',
+      learn: 'Aprendi a criar um projeto com componentes customizados, de forma profissional, utilizando testes e tipagens.',
+    },
+    github: 'https://github.com/Shyroe/wongames',
+    visit: 'https://wongames.willianjusten.com.br/',
+  },
+  {
+    id: 8,
+    show: false,
+    title: 'movies finder',
+    image: moviesFinderImg,
+    content: {
+      description: `Esta aplicação trata-se de um site de streaming de filmes e séries, inspirado em netflix, hulu.
+      Foi utilizado Redux para trabalhar com estados de forma global, em diferentes componentes da aplicação.
+      `,
+      technologies: 'NextJS; MUI (Material UI); eslint; Typescript; Redux; React Loading bar',
+      features: `Listagem de filmes, séries e atores;
+      Paginação; busca por filtros;
+      integração a API externa;`,
+      learn: `Este projeto foi muito importante para aprimorar minhas habilidades com tipagens, criação de paginação, filtros.
+      Implementação de Redux para utilizar gerenciamento de estados em toda a aplicação.`,
+    },
+    github: 'https://github.com/Shyroe/shyroe-movies-finder',
+    visit: 'https://movies-finder.vercel.app/',
   },
 ];
 
@@ -115,7 +172,11 @@ export const techData = [
 export const aboutData = {
   title: 'sobre',
   content:
-    'Olá, meu nome é: Leonardo Camargo. Minha entrada no universo do desenvolvimento WEB, se deu em razão da necessidade de criar um blog e compartilhar conhecimento com as pessoas. Eu iniciei com o Gerenciador de Conteúdo Wordpress, na época não entendia as tecnologias de desenvolvimento WEB. Apesar disso, ainda consegui criar um blog gratuito, porém comecei a estudar para conseguir melhorar alguns aspectos do blog. Acontece que me apaixonei por esse universo. Certo dia tomei uma decisão que mudou completamente minha vida. Disse: “Eu vou me tornar um desenvolvedor WEB e contribuir positivamente à vida de cada um com meus projetos”. A partir de então, tenho buscado conhecimento de todas as formas, por meio de: livros, vídeos, áudios, artigos na internet, cursos, etc. A meta é tornar-me o melhor desenvolvedor, isso mesmo, a melhor versão de mim mesmo a cada dia.',
+    `Olá, meu nome é Leonardo Camargo, sou um desenvolvedor Frontend e Backend apaixonado por criar projetos para a internet e solucionar problemas de programação. Além do código, prezo também por boas práticas de programação.
+    Procuro sempre estudar e dominar as melhores tecnologias e práticas do mercado para desenvolver projetos robustos e escaláveis.
+
+    Tenho +1 ano trabalhando como desenvolvedor fullstack, ao longo desse tempo, adquiri muita experiência, trabalhando em diversos tipos de projetos, tais como: páginas de vendas (landingpages), blogs, sites institucionais, Ecommerces (lojas virtuais), sites comerciais e sites educacionais.
+    `,
 };
 
 export const contactData = [
