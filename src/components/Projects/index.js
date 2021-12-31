@@ -7,7 +7,7 @@ import * as S from './styled';
 import { Wrapper } from '../../styles/styled';
 
 export default () => {
-  const [projects, setProjects] = useState(projectsData);
+  const [projects, setProjects] = useState(projectsData.reverse());
   const [projectsClone, setProjectsClone] = useState([]);
   const [modalsClone, setModalsClone] = useState([]);
   console.log('modals clone state: ', modalsClone);
@@ -16,6 +16,7 @@ export default () => {
 
   const loadAllProjects = () => {
     console.log('All projects');
+    console.log('projects Data json: ', projectsData);
     const copyProjects = cloneDeep(projects);
     console.log('LoadAll Copy Projects: ', copyProjects);
     copyProjects.forEach((item) => {
@@ -61,7 +62,6 @@ export default () => {
       left: 0,
       behavior: 'smooth',
     });
-
 
     // change height
     // console.log('window height init: ', window.innerHeight);

@@ -84,11 +84,31 @@ export const ModalContent = styled.div`
       }
     }
     & > .description {
-      font-size: 1.7rem;
-      font-weight: 400;
-      margin-top: 2.5rem;
-      line-height: 1.6;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      /* border: 2px solid blue; */
+      row-gap: .7rem;
+      margin-top: 5rem;
+
+      & > .destaque {
+        color: ${V.colorIcon};
+        font-weight: 600;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        margin-bottom: .5rem;
+        margin-top: 2.8rem;
+        text-align: left;
+      }
+     & > .paragraph {
+        font-size: 1.7rem;
+        font-weight: 400;
+        line-height: 1.6;
+      }
     }
+
   }
 
   & > .modal-footer {
