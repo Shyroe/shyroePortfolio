@@ -9,6 +9,8 @@ import shopCartImg from '../assets/img/shopping-cart.jpg';
 import expenseTrackerImg from '../assets/img/expense-tck.jpg';
 import wongamesImg from '../assets/img/wongames.png';
 import moviesFinderImg from '../assets/img/movies-finder.png';
+import shyroeBlog from '../assets/img/shyroedevblog.png';
+import cryptShyroe from '../assets/img/crypt-shyroe.png';
 
 // Projects Data
 
@@ -121,6 +123,61 @@ export const projectsData = [
     },
     github: 'https://github.com/Shyroe/shyroe-movies-finder',
     visit: 'https://movies-finder.vercel.app/',
+  },
+  {
+    id: 9,
+    show: false,
+    title: 'Shyroe Blog',
+    image: shyroeBlog,
+    content: {
+      description: `Este projeto trata-se de um Blog voltado para nicho de desenvolvimento Web.
+      `,
+      technologies: 'Gatsby(React and Graphql); Elasticlunr; Disqus; Styled-components',
+      features: `
+      Filtro de pesquisa para posts (elasticlunr);
+Filtro por tags e categorias;
+Tema dark e light;
+Requisições a API de forma moderna, usando GraphQl;
+Paginação;
+Implementação de comentários nas postagens (Disqus);
+Newsletter;
+      `,
+      learn: `
+      Aprendi sobre conceitos e implementações utilizando Gatsby;
+Aprimorei minhas habilidades em trabalhar com requisições usando Graphql;
+Criação de funcionalidades específicas para Blog, tais como: paginação de posts; comentários; filtros, etc.
+      `,
+    },
+    github: 'https://github.com/Shyroe/shyroeDev',
+    visit: 'https://shyroedevblog.netlify.app',
+  },
+  {
+    id: 10,
+    show: false,
+    title: 'Shyroe Crypt - Web 3.0',
+    image: cryptShyroe,
+    content: {
+      description: `
+      Esta é uma aplicação moderna que utiliza tecnologias da Web 3.0:
+projeto baseado em Blockchain, utiliza smart contracts para fazer transações.
+      `,
+      technologies: 'ReactJS; Vite; Smart Contracts (Solidity language); Hardhat; Ethers (Ethereum blockchain); Framer Motion; TailwindCss',
+      features: `
+      Conectar Wallet usando Metamask;
+Web 3.0 and Ethereum blockchain;
+Integração com Giphy API;
+Integração com Ropsten Network, para fazer trazação de Ethereums;
+Criar e Listar Transactions (transações de criptomoedas);
+      `,
+      learn: `
+      Durante a construção deste projeto, aprendi conceitos de Web 3.0 e criação de aplicação baseada em Blockchain usando Smart contracts.
+Implementações e funcionalidades que aprendi:
+Criar Wallet (carteira de criptomoedas); Conectar Wallet; criação de smart contracts; implementação de transactions;
+Utilização de blockchain do Ethereum. E conceitos e práticas sobre a linguagem Solidity.
+      `,
+    },
+    github: 'https://github.com/Shyroe/crypt-shyroe',
+    visit: '',
   },
 ];
 
